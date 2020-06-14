@@ -28,14 +28,14 @@
 struct ObjectStruct { char x; char y; char type; };
 
 SceneID sceneStage[TOTAL_STAGE_NUM];
-SceneID selectStage, clearStage;
+SceneID selectStage, clearStage, startpage;
 ObjectID tile[TOTAL_STAGE_NUM][BOARD_Y_NUM][BOARD_X_NUM];	// 벽과 바닥(타일) 오브젝트.
 ObjectID object[TOTAL_STAGE_NUM][TOTAL_OBJECT_TYPE][30];
 ObjectStruct objectStruct[TOTAL_STAGE_NUM][TOTAL_OBJECT_TYPE][30];
 ObjectID player[TOTAL_STAGE_NUM];
 ObjectID stageButton[TOTAL_STAGE_NUM];
 ObjectID backButton[TOTAL_STAGE_NUM];
-ObjectID quitbutton;
+ObjectID quitbutton, startpagebox, startbutton;
 
 SoundID bgm, blocked, clearsound, oneclear; //브금, 막혔을 때 소리, 클리어소리
 
@@ -468,6 +468,9 @@ void mouseCallback(ObjectID object, int x, int y, MouseAction action) {
 	if (object == quitbutton) {
 		endGame();
 	}
+	else if (object == startbutton) {
+		enterScene(selectStage);
+	}
 }
 
 void keyboardCallback(KeyCode code, KeyState state)
@@ -510,6 +513,15 @@ int main() {
 
 	selectStage = createScene("스테이지 선택", "Images/Background.png");
 	clearStage = createScene("스테이지 클리어", "Images/stageclear.png");
+	startpage = createScene("시작 화면", "Images/Background.png");
+
+	startpagebox = createObject("Images/TitleImage.png");
+	locateObject(startpagebox, startpage, 494, 300);
+	showObject(startpagebox);
+
+	startbutton = createObject("Images/startbutton.png");
+	locateObject(startbutton, startpage, 505, 130);
+	showObject(startbutton);
 
 	// 스테이지 선택 버튼 구성
 	stageButton[0] = createObject("Images/Button0.png", selectStage, (short)buttonX[0], (short)buttonY[0], true);
@@ -608,5 +620,5 @@ int main() {
 
 	playing = false;
 	curStage = 0;
-	startGame(selectStage);
+	startGame(startpage);
 }
