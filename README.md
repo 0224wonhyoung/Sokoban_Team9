@@ -4,8 +4,9 @@
 ![설명1](https://user-images.githubusercontent.com/63161899/85223040-c6662400-b3fa-11ea-9e0a-27335fb4d4fd.PNG)
 상자를 밀어 모든 상자를 흰 테두리에 위치시켜야 하는 게임입니다.
 총 10개의 스테이지로 구성되어 있고 스테이지는 난이도 순입니다.
+
 [게임설명영상]
-[![설명2](https://user-images.githubusercontent.com/63161899/85223724-e21ff900-b3ff-11ea-921d-9fae557d48c3.png)](https://www.youtube.com/watch?v=9aJKIznFFYw)
+>[![설명2](https://user-images.githubusercontent.com/63161899/85223724-e21ff900-b3ff-11ea-921d-9fae557d48c3.png)](https://www.youtube.com/watch?v=9aJKIznFFYw)
 ---
 
 ![게임룰](https://user-images.githubusercontent.com/63161899/85223279-dd0d7a80-b3fc-11ea-8e62-23e2679d6a0d.PNG)
@@ -24,5 +25,5 @@
 ---
 • release탭에 들어가서 최신 버전의 Setup_Sokoban.msi를 다운받아 설치하면 실행가능합니다.
 
-[]
-[![해법2](https://user-images.githubusercontent.com/63161899/85223722-e1876280-b3ff-11ea-8e85-3e172b7f231b.png)](https://www.youtube.com/watch?v=-mLydhSf42U)
+[게임해법영상]
+>[![해법2](https://user-images.githubusercontent.com/63161899/85223722-e1876280-b3ff-11ea-8e85-3e172b7f231b.png)](https://www.youtube.com/watch?v=-mLydhSf42U)
