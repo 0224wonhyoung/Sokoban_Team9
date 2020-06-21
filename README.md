@@ -1,5 +1,6 @@
 <Sokoban 게임>
 ==============
+![설명1](https://user-images.githubusercontent.com/63161899/85223040-c6662400-b3fa-11ea-9e0a-27335fb4d4fd.PNG)
 상자를 밀어 모든 상자를 흰 테두리에 위치시켜야 하는 게임입니다.
 총 10개의 스테이지로 구성되어 있고 스테이지는 난이도 순입니다.
 * 게임 설명 영상 : https://www.youtube.com/watch?v=9aJKIznFFYw
